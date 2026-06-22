@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     canonical: "https://ltotrackeronline.ph",
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "Ks7MP0iWct97Qi3id9h3SD5xUenSXpKbBxgIaw6YqpQ",
   },
 };
 
@@ -87,6 +87,17 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/LTO-Logo.webp" type="image/webp" />
         <link rel="apple-touch-icon" href="/LTO-Logo.webp" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2JKSPNBP3" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-W2JKSPNBP3');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <OrganizationSchema />
