@@ -69,6 +69,10 @@ export const metadata: Metadata = {
       "Track your LTO plate number, driver's license, and MV file status online. Free LTO tracker for the Philippines.",
     images: ["/LTO-Tracker-Banner.webp"],
   },
+  icons: {
+    icon: "/img/LTO-Logo.png",
+    apple: "/img/LTO-Logo.png",
+  },
   alternates: {
     canonical: "https://ltotrackeronline.ph",
   },
@@ -85,8 +89,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <head>
-        <link rel="icon" href="/LTO-Logo.webp" type="image/webp" />
-        <link rel="apple-touch-icon" href="/LTO-Logo.webp" />
+        <link rel="icon" href="/img/LTO-Logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/img/LTO-Logo.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2JKSPNBP3" />
         <script
           dangerouslySetInnerHTML={{
